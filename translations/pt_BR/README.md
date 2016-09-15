@@ -5,7 +5,7 @@
 
 ## Traduções
 
-* [ORIGINAL](https://github.com/prime-solutions/prime-itcss/)
+* [ORIGINAL](https://github.com/hemersonvianna/code-writing-rules/)
 
 ## Sumário
 
@@ -13,10 +13,14 @@
 
 ### Commits
 
+Para a contribuiição em projetos, a mensagem do **commit**, título do **pull request** e a **issue**, devem ser escritos em inglês.
+
+Tendo uma `issue` ou uma tarefa no Trello, Jira ou outro software de gerenciamento de tarefas para 1 ou mais commits, informar no começo da mensagem do mesmo.
+
 
 ```bash
 // Good
-git commit -m "#10 [ add ] readme with the rules"
+git commit -m "#10 [add] readme with the rules"
 
 // Bad
 git commit -m "my first commit"
