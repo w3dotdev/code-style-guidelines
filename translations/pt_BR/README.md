@@ -17,6 +17,13 @@ Para a contribuiição em projetos, a mensagem do **commit**, título do **pull 
 
 Tendo uma `issue` ou uma tarefa no Trello, Jira ou outro software de gerenciamento de tarefas para 1 ou mais commits, informar no começo da mensagem do mesmo.
 
+Para facilitar, a mensagem deverá ter os seguintes status:
+
+- ADD
+- DEL
+- UPDATE
+
+O `status` será informado na mensagem entre colchetes. E poderá ser interpretado como status de um arquivo ou trecho de código.
 
 ```bash
 // Good
