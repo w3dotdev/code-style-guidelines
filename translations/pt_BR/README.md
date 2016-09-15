@@ -13,17 +13,27 @@
 
 ### Commits
 
+#### 1. Em inglês
+
 Para a contribuiição em projetos, a mensagem do **commit**, título do **pull request** e a **issue**, devem ser escritos em inglês.
+
+#### 2. Número da tarefa
 
 Tendo uma `issue` ou uma tarefa no Trello, Jira ou outro software de gerenciamento de tarefas para 1 ou mais commits, informar no começo da mensagem do mesmo.
 
+#### 3. Status
+
 Para facilitar, a mensagem deverá ter os seguintes status:
 
-- ADD
-- DEL
-- UPDATE
+- add
+- del
+- update
 
 O `status` será informado na mensagem entre colchetes. E poderá ser interpretado como status de um arquivo ou trecho de código.
+
+#### 4. Convenção
+
+E 
 
 ```bash
 // Good
