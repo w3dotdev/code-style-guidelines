@@ -7,6 +7,21 @@
 
 * [ORIGINAL](https://github.com/prime-solutions/prime-itcss/)
 
+## Sumário
+
+* 1. [Commits](#commits)
+
+### Commits
+
+
+```bash
+// Good
+git commit -m "#10 [ add ] readme with the rules"
+
+// Bad
+git commit -m "my first commit"
+```  
+
 ## Contribuindo
 
 - Faça o fork!
@@ -17,7 +32,7 @@
 
 ## Log
 
-Verifique os [Releases](https://github.com/hemersonvianna/code-writing-rules/releases) ver detalhado o log de alterações.
+Verifique os [Releases](https://github.com/hemersonvianna/code-writing-rules/releases) para ver detalhado o log de alterações.
 
 ## Licença
 
