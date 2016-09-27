@@ -33,7 +33,7 @@ O `status` será informado na mensagem entre colchetes. E poderá ser interpreta
 
 #### 4. Convenção
 
-E 
+Usar letras minúsculas
 
 ```bash
 // Good
