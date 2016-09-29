@@ -10,6 +10,7 @@
 ## Sumário
 
 * 1. [Commits](#commits)
+* 2. [HTML](#html)
 
 ### Commits
 
@@ -42,6 +43,9 @@ git commit -m "#10 [add] readme with the rules"
 // Bad
 git commit -m "my first commit"
 ```  
+
+### HTML
+
 
 ## Contribuindo
 
