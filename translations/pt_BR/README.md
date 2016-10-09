@@ -597,8 +597,57 @@ Eliminar espaços e comentários, no ambiente de produção.
 }
 ```
 
-
 #### CSS Media Queries
+
+Sempre comece o desenvolvimento em `Mobile first`
+
+```css
+/* Good */
+.mainMenu { ... }
+
+@media (min-width: 768px) {
+  .mainMenu { ... }
+}
+
+@media (min-width: 992px) {
+  .mainMenu { ... }
+}
+
+/* Bad */
+.mainMenu { ... }
+
+@media (max-width: 767px) {
+  .mainMenu { ... }
+}
+```
+
+Mantenha as regras para um seletor em dispositos móveis e demais dispositos, sempre juntos.
+
+```css
+/* Good */
+.mainMenu-item { ... }
+
+@media (min-width: 992px) {
+  .mainMenu-item { ... }
+}
+
+.mainMenu-link { ... }
+
+@media (min-width: 992px) {
+  .mainMenu-link { ... }
+}
+
+/* Bad */
+.mainMenu { ... }
+.mainMenu-item { ... }
+.mainMenu-link { ... }
+
+@media (min-width: 992px) {
+  .mainMenu { ... }
+  .mainMenu-item { ... }
+  .mainMenu-link { ... }
+}
+```
 
 
 ### Javascript
