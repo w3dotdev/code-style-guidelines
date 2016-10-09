@@ -532,6 +532,72 @@ Escolha nomes que dão significado a função da mesma.
 
 #### CSS Performance
 
+Não use IDs
+
+```css
+/* Good */
+.mainMenu { ... }
+.sidebar { ... }
+
+/* Bad */
+#mainMenu { ... }
+#sidebar { ... }
+```
+
+Sempre dê preferência para a orientação a objetos por meio das classes.
+
+```css
+/* Good */
+.container { ... }
+.text { ... }
+
+/* Bad */
+div { ... }
+p { ... }
+```
+
+Não crie complexidade na herança e sempre use classes.
+
+```css
+/* Good */
+.mainMenu-list { ... }
+.mainMenu-item { ... }
+.mainMenu-text { ... }
+
+/* Bad */
+.mainMenu ul { ... }
+.mainMenu ul li { ... }
+.mainMenu ul .mainMenu-item span { ... }
+```
+
+Use no máximo 3 elementos, quando for necessário alterar o comportamento de uma classe, por intermédio de outra classe.
+
+```css
+/* Good */
+.sidebar .mainMenu { ... }
+.page.on .mainMenu { ... }
+
+/* Bad */
+.page .sidebar .mainMenu a { ... }
+```
+
+Eliminar espaços e comentários, no ambiente de produção.
+
+```css
+/* Good */
+.mainMenu{...} .mainMenu-item{...}
+
+/* Bad */
+.mainMenu {
+  ...
+}
+
+.mainMenu-item {
+  ...
+}
+```
+
+
 #### CSS Media Queries
 
 
