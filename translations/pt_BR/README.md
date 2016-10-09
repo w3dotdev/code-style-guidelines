@@ -9,20 +9,21 @@
 
 ## Sumário
 
-* 1. [Global](#global)
-  * 1.1 [Identation](#identation)
-* 2. [Commits](#commits)
-  * 2.1 [English](#english)
-  * 2.2 [Task number](#task-number)
-  * 2.3 [Status](#status)
-  * 2.4 [Message convention](#message-convention)
-* 3. [HTML](#html)
-  * 3.1 [HTML Syntax](#html-comments)
-  * 3.2 [HTML Comments](#html-syntax)
-  * 3.3 [HTML Character Encoding](#html-character-encoding)
-  * 3.4 [HTML Attribute Order](#html-attribute-order)
-* 4. [CSS / SCSS](#css--scss)
-* 5. [JavaScript](#javascript)
+1. [Global](#global)
+  1.1 [Identation](#identation)
+2. [Commits](#commits)
+  2.1 [English](#english)
+  2.2 [Task number](#task-number)
+  2.3 [Status](#status)
+  2.4 [Message convention](#message-convention)
+3. [HTML](#html)
+  3.1 [HTML Syntax](#html-comments)
+  3.2 [HTML Comments](#html-syntax)
+  3.3 [HTML Character Encoding](#html-character-encoding)
+  3.4 [HTML Attribute Order](#html-attribute-order)
+  3.5 [HTML Performance](#html-performance)
+4. [CSS / SCSS](#css--scss)
+5. [JavaScript](#javascript)
 
 ### Global
 
@@ -176,6 +177,51 @@ A ordem de atributos facilita a leitura e organização
 <div class="..." id="..." itemprop="..."></div>
 <a class="..." href="...">...</a>
 <img class="..." src="..." alt="...">
+```
+
+#### HTML Performance
+
+Se for necessário ter script externo dentro da tag `head`, sempre deve estar por último.
+
+```html 
+<!-- Good -->
+<link rel="stylesheet" href="style.css" />
+<script src="scripts.min.js"></script>
+
+<!-- Bad -->
+<script src="scripts.min.js"></script>
+</head>
+```
+
+O ideal que os scripts estejam no final do arquivo, antes do fechamento da tag `body`.
+
+```html 
+<!-- Good -->
+<script src="scripts.min.js"></script>
+</body>
+
+<!-- Bad -->
+<script src="scripts.min.js"></script>
+</head>
+```
+
+Eliminar espaços e comentários, sem dúvida trazem uma melhor performance e são dispensáveis no ambiente de produção
+
+```html
+<!-- Good -->
+<html><head>...</head><body><div class="main">...</div></body></html>
+
+<!-- Bad -->
+<html>
+  <head>
+    ...
+  </head>
+  <body>
+    <div class="main">
+      ...
+    </div><!-- /main -->
+  </body>
+</html>
 ```
 
 ## Contribuindo
