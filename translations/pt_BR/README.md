@@ -10,21 +10,20 @@
 ## Sumário
 
 * 1. [Global](#global)
-  * 1.1 [Identação](#identação)
+  * 1.1 [Identation](#identation)
 * 2. [Commits](#commits)
-  * 2.1 [Em inglês]()
-  * 2.2 [Número da tarefa]()
-  * 2.3 [Status]()
-  * 2.4 [Convenção da mensagem]()
+  * 2.1 [English](#english)
+  * 2.2 [Task number](#task-number)
+  * 2.3 [Status](#status)
+  * 2.4 [Message convention](#message-convention)
 * 3. [HTML](#html)
-  * 3.1 [Commentários](#comentarios)
-* 4. [CSS](#css)
-* 5. [SCSS](#scss)
-* 6. [JavaScript](#javascript)
+  * 3.1 [Comentários](#comments)
+* 4. [CSS / SCSS](#css--scss)
+* 5. [JavaScript](#javascript)
 
 ### Global
 
-#### Identação
+#### Identation
 
 O estilo de identação é usando espaços e o tamanho da identação é 2.
 
@@ -61,11 +60,11 @@ trim_trailing_whitespace = false
 
 ### Commits
 
-#### Em inglês
+#### English
 
 Para a contribuiição em projetos, a mensagem do **commit**, título do **pull request** e a **issue**, devem ser escritos em inglês.
 
-#### Número da tarefa
+#### Task number
 
 Tendo uma `issue` ou uma tarefa no Trello, Jira ou outro software de gerenciamento de tarefas para 1 ou mais commits, informar no começo da mensagem do mesmo.
 
@@ -80,7 +79,7 @@ Para facilitar, a mensagem deverá ter os seguintes status:
 
 O `status` será informado na mensagem entre colchetes. E poderá ser interpretado como status de um arquivo ou trecho de código.
 
-#### Convenção da mensagem
+#### Message convention
 
 Usar letras minúsculas
 
@@ -96,16 +95,35 @@ git commit -m "my first commit"
 
 #### 1. Comentários
 
+O uso mais frequente de comentários no HTMl, é para sinalizar o fechamento de uma tag. O caractere `/` seria o mesmo que escrever `end`. A preferência na identificação da tag, é por sua classe.
+
 ```html 
-<div class="container">
+<!-- Good -->
+<div class="container" id="section">
 </div><!-- /container -->
+
+<!-- Bad -->
+<div class="container" id="section">
+</div><!-- section -->
 ```
+
+O ideal é que os comentários não estejam no ambiente de produção, sendo apenas uma orientação para o desenvolvimento. Também podemos ter um bloco de comentários para facilitar o entendimento.
 
 ```html 
+<!-- Good -->
 <!-- 
+ Comment block ...
 -->
-```
+<div></div>
 
+<!-- Bad -->
+<!-- 
+ ###############################################################
+  # Comment block ...
+ ###############################################################
+-->
+<div></div>
+```
 
 ## Contribuindo
 
