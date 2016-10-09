@@ -470,7 +470,7 @@ A declaração das propriedades, devem ser em ordem alfabética.
 }
 
 /* Bad */
-.item {
+.item { 
   margin: 0;
   position: absolute;
   background: #fff;
@@ -479,6 +479,56 @@ A declaração das propriedades, devem ser em ordem alfabética.
 ```
 
 #### CSS Name
+
+Use `camelCase` para nomes compostos
+
+```css
+/* Good */
+.mainMenu { background: #fff; }
+
+/* Bad */
+.mainmenu { background: #fff; }
+```
+
+Para fácil leitura, os filhos são identificados com o `-` (hífen). 
+
+```css
+/* Good */
+.mainMenu { ... }
+.mainMenu-list { ... }
+
+/* Bad */
+.mainMenu { ... }
+.mainMenu_list { ... }
+```
+
+Para o nome de modificadores, usamos o `--`. 
+
+```css
+/* Good */
+.mainMenu {
+  background: #fff;
+  margin: 10px;
+}
+
+.mainMenu--dark { background: #000; }
+
+/* Bad */
+.mainMenu { ... }
+.mainMenu-dark { ... }
+```
+
+Escolha nomes que dão significado a função da mesma.
+
+```css
+/* Good */
+.mainMenu { ... }
+.sidebar { ... }
+
+/* Bad */
+.mm { ... }
+.sb { ... }
+```
 
 #### CSS Performance
 
