@@ -20,6 +20,7 @@
   * 3.1 [HTML Syntax](#html-comments)
   * 3.2 [HTML Comments](#html-syntax)
   * 3.3 [HTML Character Encoding](#html-character-encoding)
+  * 3.4 [HTML Attribute Order](#html-attribute-order)
 * 4. [CSS / SCSS](#css--scss)
 * 5. [JavaScript](#javascript)
 
@@ -158,6 +159,23 @@ Sempre use `UTF-8`
 <head>
   <meta charset="utf-8">
 </head>
+```
+
+#### HTML Attribute Order
+
+A ordem de atributos facilita a leitura e organização
+
+1. class
+2. id, name
+3. data-*
+4. src, for, type, href
+5. title, alt
+6. aria-*, role, itemprop
+
+```html 
+<div class="..." id="..." itemprop="..."></div>
+<a class="..." href="...">...</a>
+<img class="..." src="..." alt="...">
 ```
 
 ## Contribuindo
