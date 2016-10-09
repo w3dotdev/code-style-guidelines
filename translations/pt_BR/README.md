@@ -458,6 +458,26 @@ Os comentários sempre estarão antes do código a que se refere.
 
 #### CSS Declaration Order
 
+A declaração das propriedades, devem ser em ordem alfabética.
+
+```css
+/* Good */
+.item {
+  background: #fff;
+  color: #ffcc00;
+  margin: 0;
+  position: absolute;
+}
+
+/* Bad */
+.item {
+  margin: 0;
+  position: absolute;
+  background: #fff;
+  color: #ffcc00;
+}
+```
+
 #### CSS Name
 
 #### CSS Performance
