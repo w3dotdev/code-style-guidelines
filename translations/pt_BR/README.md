@@ -10,21 +10,31 @@
 ## Sumário
 
 1. [Global](#global)
-  1.1 [Identation](#identation)
+  * [Identation](#identation)
 2. [Commits](#commits)
-  2.1 [English](#english)
-  2.2 [Task number](#task-number)
-  2.3 [Status](#status)
-  2.4 [Message convention](#message-convention)
+  * [English](#english)
+  * [Task number](#task-number)
+  * [Status](#status)
+  * [Message convention](#message-convention)
 3. [HTML](#html)
-  3.1 [HTML Syntax](#html-comments)
-  3.2 [HTML Comments](#html-syntax)
-  3.3 [HTML Character Encoding](#html-character-encoding)
-  3.4 [HTML Attribute Order](#html-attribute-order)
-  3.5 [HTML Performance](#html-performance)
-  3.6 [HTML Base Code](#html-base-code)
-4. [CSS / SCSS](#css--scss)
-5. [JavaScript](#javascript)
+  * [HTML Syntax](#html-syntax)
+  * [HTML Comments](#html-comments)
+  * [HTML Character Encoding](#html-character-encoding)
+  * [HTML Attribute Order](#html-attribute-order)
+  * [HTML Performance](#html-performance)
+  * [HTML Base Code](#html-base-code)
+4. [CSS](#css)
+  * [CSS Syntax](#css-syntax)
+  * [CSS Comments](#css-comments)
+  * [CSS Declaration Order](#css-declaration-order)
+  * [CSS Class Name](#css-class-name)
+  * [CSS Performance](#css-performance)
+  * [CSS Media Queries](#css-media-queries)
+5. [Javascript](#javascript)
+  * [Javascript Syntax](#javascript-syntax)
+  * [Javascript Comments](#javascript-comments)
+  * [Javascript Variables](#javascript-variables)
+  * [Javascript Performance](#javascript-performance)
 
 ### Global
 
@@ -287,6 +297,30 @@ Tags meta que mais uso.
 <link rel="canonical" href="Url">
 ```
 
+### CSS
+
+#### CSS Syntax
+
+#### CSS Comments
+
+#### CSS Declaration Order
+
+#### CSS Class Name
+
+#### CSS Performance
+
+#### CSS Media Queries
+
+
+### Javascript
+
+#### Javascript Syntax
+
+#### Javascript Comments
+
+#### Javascript Variables
+
+#### Javascript Performance
 
 
 ## Contribuindo
