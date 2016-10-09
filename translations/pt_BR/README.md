@@ -9,20 +9,67 @@
 
 ## Sumário
 
-* 1. [Commits](#commits)
-* 2. [HTML](#html)
+* 1. [Global](#global)
+  * 1.1 [Identação](#identação)
+* 2. [Commits](#commits)
+  * 2.1 [Em inglês]()
+  * 2.2 [Número da tarefa]()
+  * 2.3 [Status]()
+  * 2.4 [Convenção da mensagem]()
+* 3. [HTML](#html)
+  * 3.1 [Commentários](#comentarios)
+* 4. [CSS](#css)
+* 5. [SCSS](#scss)
+* 6. [JavaScript](#javascript)
+
+### Global
+
+#### Identação
+
+O estilo de identação é usando espaços e o tamanho da identação é 2.
+
+```html
+<!-- Good -->
+<section>
+  <h3 class="title"></h3>
+  <p class="text"></p>
+</section>
+
+<!-- Bad -->
+<section>
+    <h3 class="title"></h3>
+    <p class="text"></p>
+</section>
+```
+
+Exemplo do arquivo de configuração (.editorconfig):
+
+```bash
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.md]
+trim_trailing_whitespace = false
+```
 
 ### Commits
 
-#### 1. Em inglês
+#### Em inglês
 
 Para a contribuiição em projetos, a mensagem do **commit**, título do **pull request** e a **issue**, devem ser escritos em inglês.
 
-#### 2. Número da tarefa
+#### Número da tarefa
 
 Tendo uma `issue` ou uma tarefa no Trello, Jira ou outro software de gerenciamento de tarefas para 1 ou mais commits, informar no começo da mensagem do mesmo.
 
-#### 3. Status
+#### Status
 
 Para facilitar, a mensagem deverá ter os seguintes status:
 
@@ -33,7 +80,7 @@ Para facilitar, a mensagem deverá ter os seguintes status:
 
 O `status` será informado na mensagem entre colchetes. E poderá ser interpretado como status de um arquivo ou trecho de código.
 
-#### 4. Convenção
+#### Convenção da mensagem
 
 Usar letras minúsculas
 
