@@ -27,7 +27,7 @@
   * [CSS Syntax](#css-syntax)
   * [CSS Comments](#css-comments)
   * [CSS Declaration Order](#css-declaration-order)
-  * [CSS Class Name](#css-class-name)
+  * [CSS Name](#css-name)
   * [CSS Performance](#css-performance)
   * [CSS Media Queries](#css-media-queries)
 5. [Javascript](#javascript)
@@ -54,6 +54,20 @@ O estilo de identação é usando espaços e o tamanho da identação é 2.
     <h3 class="title"></h3>
     <p class="text"></p>
 </section>
+```
+
+```css
+/* Good */
+.item {
+  background: red;
+  color: white;
+}
+
+/* Bad */
+.item {
+    background: red;
+    color: white;
+}
 ```
 
 Exemplo do arquivo de configuração (.editorconfig):
@@ -301,11 +315,133 @@ Tags meta que mais uso.
 
 #### CSS Syntax
 
+Use aspas duplas
+
+```css
+/* Good */
+[type="..."]
+[class^="..."]
+
+.item:after {
+  content: "";
+}
+
+/* Bad */
+[type='...']
+[class^='...']
+
+.item:after {
+  content: '';
+}
+```
+
+Use um espaço após o seletor 
+
+```css
+/* Good */
+.item {
+  ...
+}
+
+/* Bad */
+.item{
+  ...
+}
+```
+
+Use um espaço antes do valor da propriedade 
+
+```css
+/* Good */
+.item {
+  color: #fff;
+  margin: 10px;
+}
+
+/* Bad */
+.item {
+  color:#fff;
+  margin:10px;
+}
+```
+
+Use o ponto e vírgula após cada valor 
+
+```css
+/* Good */
+.item {
+  color: #fff;
+  margin: 10px;
+}
+
+/* Bad */
+.item {
+  color:#fff;
+  margin:10px
+}
+```
+
+Use um seletor por linha 
+
+```css
+/* Good */
+.item,
+.box {
+  color: #fff;
+  margin: 10px;
+}
+
+/* Bad */
+.item, .box {
+  color:#fff;
+  margin:10px
+}
+```
+
+Se o seletor tiver apenas uma propriedade, use na mesma linha ( Com espaço antes da propriedade e depois do valor)
+
+```css
+/* Good */
+.item { color: #fff; }
+
+/* Bad */
+.item {
+  color:#fff;
+}
+```
+
+Usar valores hexadecimais em minúsculo e abreviar se puder. 
+
+```css
+/* Good */
+.item { color: #fff; }
+
+/* Bad */
+.item { color: #FFFFFF; }
+```
+
+Não especificar a unidade para valor `0`, exceto para a propriedade `rotate`.
+
+```css
+/* Good */
+.item {
+  margin: 0;
+  transform: rotate(0deg);
+}
+
+/* Bad */
+.item {
+  font-size: 0em;
+  margin: 0px;
+}
+```
+
+
 #### CSS Comments
 
 #### CSS Declaration Order
 
-#### CSS Class Name
+#### CSS Name
 
 #### CSS Performance
 
