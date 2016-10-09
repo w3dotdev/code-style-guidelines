@@ -150,6 +150,16 @@ O ideal é que os comentários não estejam no ambiente de produção, sendo ape
 <div></div>
 ```
 
+#### HTML Character Encoding
+
+Sempre use `UTF-8`
+
+```html 
+<head>
+  <meta charset="utf-8">
+</head>
+```
+
 ## Contribuindo
 
 - Faça o fork!
