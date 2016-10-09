@@ -27,8 +27,9 @@ Tendo uma `issue` ou uma tarefa no Trello, Jira ou outro software de gerenciamen
 Para facilitar, a mensagem deverá ter os seguintes status:
 
 - add
-- del
 - update
+- del
+- fix
 
 O `status` será informado na mensagem entre colchetes. E poderá ser interpretado como status de um arquivo ou trecho de código.
 
@@ -45,6 +46,18 @@ git commit -m "my first commit"
 ```  
 
 ### HTML
+
+#### 1. Comentários
+
+```html 
+<div class="container">
+</div><!-- /container -->
+```
+
+```html 
+<!-- 
+-->
+```
 
 
 ## Contribuindo
