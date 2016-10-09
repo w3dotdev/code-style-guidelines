@@ -22,6 +22,7 @@
   3.3 [HTML Character Encoding](#html-character-encoding)
   3.4 [HTML Attribute Order](#html-attribute-order)
   3.5 [HTML Performance](#html-performance)
+  3.6 [HTML Base Code](#html-base-code)
 4. [CSS / SCSS](#css--scss)
 5. [JavaScript](#javascript)
 
@@ -223,6 +224,70 @@ Eliminar espaços e comentários, sem dúvida trazem uma melhor performance e s�
   </body>
 </html>
 ```
+
+#### HTML Base Code
+
+HTMl básico que uso para os projetos
+
+```html
+<!DOCTYPE html>
+<html class="no-js" lang="pt-BR" xml:lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script type="text/javascript">
+      // to identify if javascript is active
+      var tagHtml = document.getElementsByTagName("html")[0];
+          tagHtml.className = tagHtml.className.replace('no-js', 'js');
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
+```
+
+Tags meta que mais uso.
+
+```html
+<meta name="format-detection" content="telephone=no">
+<meta name="referrer" content="origin">
+<meta name="description" content="Description">
+
+<!-- facebook -->
+<meta property="og:site_name" content="Site name">
+<meta property="og:title" content="Title">
+<meta property="og:type"  content="website">
+<meta property="og:url" content="Url">
+<meta property="og:description" content="Description">
+<meta property="og:image" content="Image">
+<meta property="fb:admins" content="">
+<meta property="fb:app_id" content="">
+
+<link rel="image_src" href="Image">
+
+<!-- component schema.org -->
+<meta itemprop="name" content="Site name">
+<meta itemprop="description" content="Description">
+<meta itemprop="image" content="Image">
+<meta itemprop="url" content="Url">
+
+<meta name="geo.country" content="">
+<meta name="geo.region" content="">
+<meta name="geo.placename" content="">
+
+<!-- favicon -->
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<!-- canonical -->
+<link rel="canonical" href="Url">
+```
+
+
 
 ## Contribuindo
 
