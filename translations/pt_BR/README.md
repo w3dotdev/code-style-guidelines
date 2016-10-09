@@ -436,8 +436,25 @@ Não especificar a unidade para valor `0`, exceto para a propriedade `rotate`.
 }
 ```
 
-
 #### CSS Comments
+
+Os comentários sempre estarão antes do código a que se refere.
+
+```css
+/* Basic comment */
+
+/**
+ * Block comment
+ *
+ */
+
+/* ==========================================================================
+   Section
+   ========================================================================== */
+
+/* Sub-section
+   ========================================================================== */
+```
 
 #### CSS Declaration Order
 
