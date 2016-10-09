@@ -17,7 +17,9 @@
   * 2.3 [Status](#status)
   * 2.4 [Message convention](#message-convention)
 * 3. [HTML](#html)
-  * 3.1 [Comentários](#comments)
+  * 3.1 [HTML Syntax](#html-comments)
+  * 3.2 [HTML Comments](#html-syntax)
+  * 3.3 [HTML Character Encoding](#html-character-encoding)
 * 4. [CSS / SCSS](#css--scss)
 * 5. [JavaScript](#javascript)
 
@@ -93,7 +95,30 @@ git commit -m "my first commit"
 
 ### HTML
 
-#### 1. Comentários
+#### HTML Syntax
+
+Use aspas duplas
+
+```html
+<!-- Good -->
+<div class="section">
+
+<!-- Bad-->
+<div class='section'>
+```
+
+Não use o caractere `/`, para elementos que não tem tem tag de fechamento
+
+```html
+<!-- Good -->
+<img src="..." alt="...">
+
+<!-- Bad-->
+<img src="..." alt="..." />
+```
+
+
+#### HTML Comments
 
 O uso mais frequente de comentários no HTMl, é para sinalizar o fechamento de uma tag. O caractere `/` seria o mesmo que escrever `end`. A preferência na identificação da tag, é por sua classe.
 
