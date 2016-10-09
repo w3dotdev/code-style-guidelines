@@ -649,10 +649,110 @@ Mantenha as regras para um seletor em dispositos móveis e demais dispositos, se
 }
 ```
 
-
 ### Javascript
 
 #### Javascript Syntax
+
+Sempre use ponto e vírgula 
+
+```javascript
+// Good
+const $items = document.querySelectorAll('.items');
+
+// Bad
+const $items = document.querySelectorAll('.items')
+```
+
+Use aspas simples
+
+```javascript
+// Good
+let string = 'Default';
+const target = $element.getAttribute('data-target');
+
+// Bad
+let string = "Default";
+const target = $element.getAttribute("data-target");
+```
+
+Mantenha o `else` na mesma linha do fechamento do `if`.
+
+```javascript
+// Good
+if ( true ) {
+  ...
+} else {
+  ...
+}
+
+// Bad
+if ( true ) {
+  ...
+}
+else {
+  ...
+}
+```
+
+Use espaço entre os operadores.
+
+```javascript
+// Good
+for (i = 0; i < 10; i++) {
+  ...
+}
+
+// Bad
+for (i=0;i<10;i++) {
+  ...
+}
+```
+
+Use espaço fora dos `()`, mas não dentro.
+
+```javascript
+// Good
+if (condition) {
+  statement
+}
+
+// Bad
+if( condition ){
+  statement
+}
+```
+
+Sempre use `{}` para os blocos condicionais.
+
+```javascript
+// Good
+if (condition) {
+  statement
+} else if (condition) {
+  statement
+} else {
+  statement
+}
+
+// Bad
+if (condition) statement;
+else if (condition) statement;
+else statement;
+```
+
+Para checar a igualdade, sempre use `===`;
+
+```javascript
+// Good
+if (foo === 'foo') {
+  statement
+}
+
+// Bad
+if (foo == 'foo') {
+  statement
+}
+```
 
 #### Javascript Comments
 
