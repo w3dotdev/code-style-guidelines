@@ -1,7 +1,7 @@
-# Code Writing Rules
+# Code Style Guidelines
 
 [![licence mit](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](http://hemersonvianna.mit-license.org/)
-[![issues](https://img.shields.io/github/issues/hemersonvianna/code-writing-rules.svg?style=flat-square)](https://github.com/hemersonvianna/code-writing-rules/issues)
+[![issues](https://img.shields.io/github/issues/hemersonvianna/code-style-guidelines.svg?style=flat-square)](https://github.com/hemersonvianna/code-style-guidelines/issues)
 
 ## Translations
 
@@ -17,7 +17,7 @@
 
 ## Log
 
-Check [Releases](https://github.com/hemersonvianna/code-writing-rules/releases) for detailed changelog.
+Check [Releases](https://github.com/hemersonvianna/code-style-guidelines/releases) for detailed changelog.
 
 ## License
 

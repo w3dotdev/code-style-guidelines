@@ -1,11 +1,11 @@
-# Code Writing Rules
+# Orientações de Estilo de Código
 
 [![licence mit](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](http://hemersonvianna.mit-license.org/)
-[![issues](https://img.shields.io/github/issues/hemersonvianna/code-writing-rules.svg?style=flat-square)](https://github.com/hemersonvianna/code-writing-rules/issues)
+[![issues](https://img.shields.io/github/issues/hemersonvianna/code-style-guidelines.svg?style=flat-square)](https://github.com/hemersonvianna/code-style-guidelines/issues)
 
 ## Traduções
 
-* [ORIGINAL](https://github.com/hemersonvianna/code-writing-rules/)
+* [ORIGINAL](https://github.com/hemersonvianna/code-style-guidelines/)
 
 ## Sumário
 
@@ -70,7 +70,7 @@ git commit -m "my first commit"
 
 ## Log
 
-Verifique os [Releases](https://github.com/hemersonvianna/code-writing-rules/releases) para ver detalhado o log de alterações.
+Verifique os [Releases](https://github.com/hemersonvianna/code-style-guidelines/releases) para ver detalhado o log de alterações.
 
 ## Licença
 
