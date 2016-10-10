@@ -7,7 +7,7 @@
 
 * [ORIGINAL](https://github.com/hemersonvianna/code-style-guidelines/)
 
-## Sumário
+## Summary
 
 1. [Global](#global)
   * [Identation](#identation)
@@ -87,6 +87,8 @@ insert_final_newline = true
 trim_trailing_whitespace = false
 ```
 
+**[⬆ voltar ao topo](#summary)**
+
 ### Commits
 
 #### English
@@ -120,6 +122,8 @@ git commit -m "#10 [add] readme with the rules"
 git commit -m "my first commit"
 ```  
 
+**[⬆ voltar ao topo](#summary)**
+
 ### HTML
 
 #### HTML Syntax
@@ -144,6 +148,7 @@ Não use o caractere `/`, para elementos que não tem tem tag de fechamento
 <img src="..." alt="..." />
 ```
 
+**[⬆ voltar ao topo](#summary)**
 
 #### HTML Comments
 
@@ -177,6 +182,8 @@ O ideal é que os comentários não estejam no ambiente de produção, sendo ape
 <div></div>
 ```
 
+**[⬆ voltar ao topo](#summary)**
+
 #### HTML Character Encoding
 
 Sempre use `UTF-8`
@@ -186,6 +193,8 @@ Sempre use `UTF-8`
   <meta charset="utf-8">
 </head>
 ```
+
+**[⬆ voltar ao topo](#summary)**
 
 #### HTML Attribute Order
 
@@ -203,6 +212,8 @@ A ordem de atributos facilita a leitura e organização
 <a class="..." href="...">...</a>
 <img class="..." src="..." alt="...">
 ```
+
+**[⬆ voltar ao topo](#summary)**
 
 #### HTML Performance
 
@@ -248,6 +259,8 @@ Eliminar espaços e comentários, sem dúvida trazem uma melhor performance e s�
   </body>
 </html>
 ```
+
+**[⬆ voltar ao topo](#summary)**
 
 #### HTML Base Code
 
@@ -310,6 +323,8 @@ Tags meta que mais uso.
 <!-- canonical -->
 <link rel="canonical" href="Url">
 ```
+
+**[⬆ voltar ao topo](#summary)**
 
 ### CSS
 
@@ -436,6 +451,8 @@ Não especificar a unidade para valor `0`, exceto para a propriedade `rotate`.
 }
 ```
 
+**[⬆ voltar ao topo](#summary)**
+
 #### CSS Comments
 
 Os comentários sempre estarão antes do código a que se refere.
@@ -455,6 +472,8 @@ Os comentários sempre estarão antes do código a que se refere.
 /* Sub-section
    ========================================================================== */
 ```
+
+**[⬆ voltar ao topo](#summary)**
 
 #### CSS Declaration Order
 
@@ -477,6 +496,8 @@ A declaração das propriedades, devem ser em ordem alfabética.
   color: #ffcc00;
 }
 ```
+
+**[⬆ voltar ao topo](#summary)**
 
 #### CSS Name
 
@@ -529,6 +550,8 @@ Escolha nomes que dão significado a função da mesma.
 .mm { ... }
 .sb { ... }
 ```
+
+**[⬆ voltar ao topo](#summary)**
 
 #### CSS Performance
 
@@ -597,6 +620,8 @@ Eliminar espaços e comentários, no ambiente de produção.
 }
 ```
 
+**[⬆ voltar ao topo](#summary)**
+
 #### CSS Media Queries
 
 Sempre comece o desenvolvimento em `Mobile first`
@@ -648,6 +673,8 @@ Mantenha as regras para um seletor em dispositos móveis e demais dispositos, se
   .mainMenu-link { ... }
 }
 ```
+
+**[⬆ voltar ao topo](#summary)**
 
 ### Javascript
 
@@ -754,7 +781,100 @@ if (foo == 'foo') {
 }
 ```
 
+**[⬆ voltar ao topo](#summary)**
+
 #### Javascript Comments
+
+Use `//` para comentário de uma linha
+
+```javascript
+// Good
+// Description
+
+// Bad
+/**
+ * Description
+ */
+```
+
+Use o comentário de uma linha acima do código referente. 
+
+```javascript
+// Good
+// set the default status to true
+const status = this._status || true;
+
+// Bad
+const status = this._status || true; // set the default status to true
+```
+
+Use `/** ... */` para blocos de comentários
+
+```javascript
+// Good
+/**
+ * Description
+ * @param {String} Description of the param
+ */
+
+// Bad
+//
+// Description
+//
+```
+
+Pode ter comentários com prefixo de ação.
+
+- FIXME - um problema que precisa ser revisto
+- TODO  - sugestão de uma solução para o problema que precisa ser implementado
+
+```javascript
+// FIXME: shouldn't use a global here
+total = 0;
+
+// TODO: total should be configurable by an options param
+this.total = 0;
+```
+
+Uma sugestão de sintaxe para escrever os comentários é o do [JSDuck](https://github.com/senchalabs/jsduck/wiki).
+
+```javascript
+/**
+ * @class Class name
+ * @param {String} Description of the param
+ * @extends name of the 
+ * Documentation for the class
+ */
+
+ /**
+ * @event click
+ * Documentation for the event
+ * @param {String} Description of the param
+ */
+
+/**
+ * @method Method name
+ * Documentation for the method
+ * @param {String} Description of the param
+ * @return {String} Description of the return
+ */
+
+/**
+ * @property {Boolean} [property=false]
+ * Description
+ */
+
+/**
+ * @class Class name
+ * Documentation for the class
+ *
+ * @constructor
+ * Documentation for the constructor
+ * @param {String} Description of the param
+ */
+```
+
+**[⬆ voltar ao topo](#summary)**
 
 #### Javascript Variables
 
