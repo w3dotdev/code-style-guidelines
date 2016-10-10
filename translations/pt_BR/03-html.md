@@ -10,26 +10,26 @@
   3. [Status](02-commits.md#status)
   4. [Message convention](02-commits.md#message-convention)
 3. [HTML](03-html.md)
-  1. [HTML Syntax](03-html.md#html-syntax)
-  2. [HTML Comments](03-html.md#html-comments)
-  3. [HTML Character Encoding](03-html.md#html-character-encoding)
-  4. [HTML Attribute Order](03-html.md#html-attribute-order)
-  5. [HTML Performance](03-html.md#html-performance)
-  6. [HTML Base Code](03-html.md#html-base-code)
+  1. [Syntax](03-html.md#syntax)
+  2. [Comments](03-html.md#comments)
+  3. [Character Encoding](03-html.md#character-encoding)
+  4. [Attribute Order](03-html.md#attribute-order)
+  5. [Performance](03-html.md#performance)
+  6. [Base Code](03-html.md#base-code)
 4. [CSS](04-css.md)
-  1. [CSS Syntax](04-css.md#css-syntax)
-  2. [CSS Comments](04-css.md#css-comments)
-  3. [CSS Declaration Order](04-css.md#css-declaration-order)
-  4. [CSS Name](04-css.md#css-name)
-  5. [CSS Performance](04-css.md#css-performance)
-  6. [CSS Media Queries](04-css.md#css-media-queries)
+  1. [Syntax](04-css.md#syntax)
+  2. [Comments](04-css.md#comments)
+  3. [Declaration Order](04-css.md#declaration-order)
+  4. [Name](04-css.md#name)
+  5. [Performance](04-css.md#performance)
+  6. [Media Queries](04-css.md#media-queries)
 5. [Javascript](05-javascript.md)
-  1. [Javascript Syntax](05-javascript.md#javascript-syntax)
-  2. [Javascript Comments](05-javascript.md#javascript-comments)
-  3. [Javascript Variables](05-javascript.md#javascript-variables)
-  4. [Javascript Performance](05-javascript.md#javascript-performance)
+  1. [Syntax](05-javascript.md#syntax)
+  2. [Comments](05-javascript.md#comments)
+  3. [Variables](05-javascript.md#variables)
+  4. [Performance](05-javascript.md#performance)
 
-## HTML Syntax
+## Syntax
 
 Use aspas duplas
 
@@ -53,7 +53,7 @@ Não use o caractere `/`, para elementos que não tem tem tag de fechamento
 
 **[⬆ voltar ao topo](#summary)**
 
-## HTML Comments
+## Comments
 
 O uso mais frequente de comentários no HTMl, é para sinalizar o fechamento de uma tag. O caractere `/` seria o mesmo que escrever `end`. A preferência na identificação da tag, é por sua classe.
 
@@ -87,7 +87,7 @@ O ideal é que os comentários não estejam no ambiente de produção, sendo ape
 
 **[⬆ voltar ao topo](#summary)**
 
-## HTML Character Encoding
+## Character Encoding
 
 Sempre use `UTF-8`
 
@@ -99,7 +99,7 @@ Sempre use `UTF-8`
 
 **[⬆ voltar ao topo](#summary)**
 
-## HTML Attribute Order
+## Attribute Order
 
 A ordem de atributos facilita a leitura e organização
 
@@ -118,7 +118,7 @@ A ordem de atributos facilita a leitura e organização
 
 **[⬆ voltar ao topo](#summary)**
 
-## HTML Performance
+## Performance
 
 Se for necessário ter script externo dentro da tag `head`, sempre deve estar por último.
 
@@ -165,7 +165,7 @@ Eliminar espaços e comentários, sem dúvida trazem uma melhor performance e s�
 
 **[⬆ voltar ao topo](#summary)**
 
-## HTML Base Code
+## Base Code
 
 HTMl básico que uso para os projetos
 
