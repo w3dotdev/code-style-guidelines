@@ -1,11 +1,4 @@
-# Orientações de Estilo de Código
-
-[![licence mit](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](http://hemersonvianna.mit-license.org/)
-[![issues](https://img.shields.io/github/issues/hemersonvianna/code-style-guidelines.svg?style=flat-square)](https://github.com/hemersonvianna/code-style-guidelines/issues)
-
-## Traduções
-
-* [ORIGINAL](https://github.com/hemersonvianna/code-style-guidelines/)
+# Global
 
 ## Summary
 
@@ -36,18 +29,53 @@
   3. [Javascript Variables](05-javascript.md#javascript-variables)
   4. [Javascript Performance](05-javascript.md#javascript-performance)
 
-## Contribuindo
+## Identation
 
-- Faça o fork!
-- Crie a sua branch feature: `git checkout -b my-new-feature`
-- Faça o commit das suas alterações: `git commit -m 'Add some feature'`
-- Faça o push para o servidor: `git push origin my-new-feature`
-- E realize o pull request
+O estilo de identação é usando espaços e o tamanho da identação é 2.
 
-## Log
+```html
+<!-- Good -->
+<section>
+  <h3 class="title"></h3>
+  <p class="text"></p>
+</section>
 
-Verifique os [Releases](https://github.com/hemersonvianna/code-style-guidelines/releases) para ver detalhado o log de alterações.
+<!-- Bad -->
+<section>
+    <h3 class="title"></h3>
+    <p class="text"></p>
+</section>
+```
 
-## Licença
+```css
+/* Good */
+.item {
+  background: red;
+  color: white;
+}
 
-[MIT license](http://hemersonvianna.mit-license.org/) © Hemerson Vianna
+/* Bad */
+.item {
+    background: red;
+    color: white;
+}
+```
+
+Exemplo do arquivo de configuração (.editorconfig):
+
+```bash
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.md]
+trim_trailing_whitespace = false
+```
+
+**[⬆ voltar ao topo](#summary)**
