@@ -229,4 +229,150 @@ Uma sugestão de sintaxe para escrever os comentários é o do [JSDuck](https://
 
 ## Variables
 
+Sempre use `const` ou `let` para declarar variáveis. Senão irá resultar em variáveis ​​globais.
+
+```javascript
+// Good
+const gallery = new Gallery();
+
+// Bad
+gallery = new Gallery();
+```
+
+Use a declaração `const` ou `let`, por variável.
+
+```javascript
+// Good
+const items = getItems();
+const name = 'name';
+const status = 'open';
+
+// Bad
+const items = getItems(),
+    name = 'name',
+    status = 'open';
+```
+
+Agrupe as suas `const` e em seguida, as `let`s.
+
+```javascript
+// Good
+const status = true;
+const items = getItems();
+let name;
+let i;
+let length;
+
+// Bad
+let i, len, status,
+    items = getItems(),
+    status = true;
+
+// Bad
+let i;
+const items = getItems();
+let status;
+const status = true;
+let len;
+```
+
+Crie as variáveis onde precise das mesmas.
+
+```javascript
+// Good
+function checkName(hasName) {
+  if (hasName === 'test') {
+    return false;
+  }
+
+  const name = getName();
+
+  if (name === 'test') {
+    this.setName('');
+    return false;
+  }
+
+  return name;
+}
+
+// Bad - unnecessary function call
+function checkName(hasName) {
+  const name = getName();
+
+  if (hasName === 'test') {
+    return false;
+  }
+
+  if (name === 'test') {
+    this.setName('');
+    return false;
+  }
+
+  return name;
+}
+```
+
+Não faça atribuições de variáveis em cadeia. Ao encadear atribuições de variáveis ​, se​ cria variáveis ​​globais implícitas.
+
+```javascript
+// Good
+(function example() {
+  let a = 1;
+  let b = a;
+  let c = a;
+}());
+
+console.log(a); // undefined
+console.log(b); // undefined
+console.log(c); // undefined
+
+// the same applies for `const`
+
+// Bad
+(function example() {
+  // JavaScript interprets this as
+  // let a = ( b = ( c = 1 ) );
+  // The let keyword only applies to variable a; variables b and c become
+  // global variables.
+  let a = b = c = 1;
+}());
+
+console.log(a); // undefined
+console.log(b); // 1
+console.log(c); // 1
+```
+
+Evitar o uso de incrementos e decrementos unários (++, --).
+
+```javascript
+// Good
+let array = [1, 2, 3];
+let num = 1;
+let increment = num += 1;
+let decrement = num -= 1;
+
+array.forEach((value) => {
+  value += 1;
+});
+
+// Bad
+let array = [1, 2, 3];
+let num = 1;
+let increment = num ++;
+let decrement = -- num;
+
+for(let i = 0; i < array.length; i++){
+  let value = array[i];
+  ++value;
+}
+```
+
+**[⬆ voltar ao topo](#summary)**
+
 ## Performance
+
+```javascript
+
+```
+
+**[⬆ voltar ao topo](#summary)**
