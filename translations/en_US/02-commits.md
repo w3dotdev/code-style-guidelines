@@ -28,3 +28,36 @@
   2. [Comments](05-javascript.md#comments)
   3. [Variables](05-javascript.md#variables)
   4. [Performance](05-javascript.md#performance)
+
+## English
+
+For the contribution in projects, the message **commit**, **pull request** and **issue** must be written in English.
+
+## Task number
+
+Having a `issue` or a task in Trello, Jira or other task management software for one or more commits, inform the beginning of the same message.
+
+## Status
+
+To facilitate, the message should have the following status:
+
+- add
+- update
+- del
+- fix
+
+The `status` will be informed in the message brackets. And it could be interpreted as the status of a file or code snippet.
+
+## Message convention
+
+Use lowercase letters
+
+```bash
+// Good
+git commit -m "#10 [add] readme with the rules"
+
+// Bad
+git commit -m "my first commit"
+```
+
+**[⬆ back to the top](#summary)**

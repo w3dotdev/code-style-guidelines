@@ -31,7 +31,7 @@
 
 ## English
 
-Para a contribuiição em projetos, a mensagem do **commit**, título do **pull request** e a **issue**, devem ser escritos em inglês.
+Para a contribuição em projetos, a mensagem do **commit**, **pull request** e a **issue**, devem ser escritos em inglês.
 
 ## Task number
 

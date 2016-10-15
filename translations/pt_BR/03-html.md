@@ -55,7 +55,7 @@ Não use o caractere `/`, para elementos que não tem tem tag de fechamento
 
 ## Comments
 
-O uso mais frequente de comentários no HTMl, é para sinalizar o fechamento de uma tag. O caractere `/` seria o mesmo que escrever `end`. A preferência na identificação da tag, é por sua classe.
+O uso mais frequente de comentários no HTML, é para sinalizar o fechamento de uma tag. O caractere `/` seria o mesmo que escrever `end`. A preferência na identificação da tag, é por sua classe.
 
 ```html 
 <!-- Good -->
@@ -167,7 +167,7 @@ Eliminar espaços e comentários, sem dúvida trazem uma melhor performance e s�
 
 ## Base Code
 
-HTMl básico que uso para os projetos
+HTML básico que uso para os projetos
 
 ```html
 <!DOCTYPE html>

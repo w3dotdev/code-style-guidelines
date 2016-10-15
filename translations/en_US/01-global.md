@@ -28,3 +28,54 @@
   2. [Comments](05-javascript.md#comments)
   3. [Variables](05-javascript.md#variables)
   4. [Performance](05-javascript.md#performance)
+
+## Identation
+
+The indentation style is using tab soft and the size of the indentation is 2.
+
+```html
+<!-- Good -->
+<section>
+  <h3 class="title"></h3>
+  <p class="text"></p>
+</section>
+
+<!-- Bad -->
+<section>
+    <h3 class="title"></h3>
+    <p class="text"></p>
+</section>
+```
+
+```css
+/* Good */
+.item {
+  background: red;
+  color: white;
+}
+
+/* Bad */
+.item {
+    background: red;
+    color: white;
+}
+```
+
+Example configuration file (.editorconfig):
+
+```bash
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.md]
+trim_trailing_whitespace = false
+```
+
+**[⬆ back to the top](#summary)**
