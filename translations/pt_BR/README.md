@@ -36,6 +36,11 @@
   3. [Javascript Variables](05-javascript.md#javascript-variables)
   4. [Javascript Performance](05-javascript.md#javascript-performance)
 
+## Referências
+
+- [airbnb - JavaScript Style Guide](https://github.com/airbnb/javascript)
+
+
 ## Contribuindo
 
 - Faça o fork!

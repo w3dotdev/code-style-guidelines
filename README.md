@@ -36,6 +36,10 @@
   3. [Variables](translations/en_US/05-javascript.md#variables)
   4. [Performance](translations/en_US/05-javascript.md#performance)
 
+## Referencies
+
+- [airbnb - JavaScript Style Guide](https://github.com/airbnb/javascript)
+
 ## Contributing
 
 - Fork it!
